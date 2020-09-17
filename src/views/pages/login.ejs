@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('../common/head'); -%>
+</head>
+<body class="container">
+
+<header>
+    <%- include ('../common/header'); -%>
+</header>
+
+<main>
+    <div class="container-fluid" style="margin-top: 5%;">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+            <form action="auth" method="POST">
+            <div class="card text-center card  bg-default mb-3">
+              <div class="card-header">
+                LOGIN
+              </div>
+              <div class="card-body">
+                   <input type="text" name="userName" class="form-control input-sm chat-input" placeholder="Username" />
+                </br>
+                  <input type="password" name="userPassword" class="form-control input-sm chat-input" placeholder="Password" />
+              </div>
+              <div class="card-footer text-muted">
+                <!--<a href="auth" class="btn btn-secondary">LOGIN</a>-->
+                <input type="submit" class="btn btn-primary" value="Log in">
+                <a href="register" class="btn btn-secondary">REGISTER</a>
+              </div>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <%- include ('../common/footer'); -%>
+</footer>
+
+</body>
+</html>
